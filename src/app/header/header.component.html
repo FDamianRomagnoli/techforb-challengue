@@ -1,0 +1,11 @@
+<header class="header">
+
+    <img [src]="logoURL" alt="company logo" class="header__logo">
+    
+    <button class="header__nav-button" (click)="displayMenu()">
+        <img [src]="btnURL" alt="mobile browser button ">
+    </button>
+
+    <app-navigation [show]="show" class="header__nav" ></app-navigation>
+
+</header>

@@ -1,0 +1,36 @@
+.header{
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 80px;
+    background-color: #FFFFFF;
+    z-index: 10;
+}
+
+.header__nav-button{
+    position: absolute;
+    right: 20px;
+}
+
+.header__nav{
+    position: relative;
+    right: 0px;
+}
+
+.header__logo{
+    position: absolute;
+    left: 20px;
+}
+
+@media (min-width: 1024px){
+    .header__nav-button{
+        display: none;
+    }
+    .header__nav{
+        position: absolute;
+        right: 100px;
+    }
+    .header__logo{
+        left: 55px;
+    }
+}

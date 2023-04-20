@@ -1,0 +1,118 @@
+#home{
+    position: relative;
+    min-height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+
+.home-background{
+    position: absolute;
+    height: inherit;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -10;
+    background-color: linear-gradient(104.08deg, #FFFFFF 11.14%, #FFFEFE 54.49%, #F8F8F8 90.41%, #ce6363 90.41%);
+}  
+
+.home-presentation{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.home-presentation .title{
+    display: inline-block;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 65px;
+    letter-spacing: 0.7px;
+    color: #333333;
+    text-shadow: 2px 0px 0px #333333;
+}
+
+.home-presentation .description{
+    display: inline-block;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.5px;
+    color: #999999;
+}
+
+.home-presentation .button{
+    font-weight: 400;
+    font-size: 16px;
+    width: 227px;
+    height: 47px;
+    color: #FFFFFF;
+    background: linear-gradient(180deg, #33A3AA 0%, rgba(71, 170, 176, 0.87) 100%);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 20px;
+}
+
+.home-presentation .button:hover{
+    cursor: pointer;
+}
+
+.home-img{
+    width: 45%;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 1024px){
+
+    #home{
+        flex-direction: column;
+        justify-content: start;
+        height: auto;
+        padding-bottom: 200px;
+    }
+
+    .home-presentation{
+        width: 80%; 
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .home-img{
+        width: 80%;
+    }
+
+}
+
+@media (max-width: 528px){
+    #home{
+        justify-items: center;
+        padding-bottom: 100px;
+    }
+
+    .home-presentation{
+        width: 95%; 
+    }
+
+    .home-presentation .title{
+        font-size: 32px;
+    }
+
+    .home-img{
+        width: 95%;
+    }
+
+    .home-presentation,.home-description{
+        text-align: center;
+    }
+    .button{
+        margin: 0 auto;
+    }
+    .home-img{
+        margin-top: 30px;
+    }
+}

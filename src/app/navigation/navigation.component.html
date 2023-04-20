@@ -1,0 +1,18 @@
+<nav class="nav-desktop">
+    <ul class="nav-list">
+        <li *ngFor="let navigation of navigationItems">
+            <a [href]="navigation.url">{{navigation.name}}</a>
+        </li>
+    </ul>
+</nav>
+
+<nav class="nav-mobile" [ngClass]="{
+    'show-nav': show,
+    'hiden-nav': !show,
+}">
+    <ul class="nav-list">
+        <li *ngFor="let navigation of navigationItems">
+            <a [href]="navigation.url">{{navigation.name}}</a>
+        </li>
+    </ul>
+</nav>
